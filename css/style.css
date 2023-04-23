@@ -1,0 +1,139 @@
+/*css geral*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Helvetica, sans-serif;
+    color: #323232;
+    border: none;
+
+}
+
+input,label {
+
+    display: block;
+    width: 100%;
+    
+}
+
+input:focus, label:focus {
+
+    outline: none;
+
+}
+
+a {
+
+    color: rgb(93, 93, 240);
+}
+
+body {
+
+    padding-top: 5vh; /* view height 5% da tela para baixo */
+   background: url('../img/library.jpg');
+    background-size: cover;
+    background-position-y: -150px ;
+
+} 
+
+
+/*form */
+
+#main-container {
+
+    width: 500px;
+    margin-left:auto;
+    margin-right: auto;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px;    
+}
+
+#main-container h1 {
+
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.6rem; /*font adaptada ao elemento root*/
+    margin-left: 15px;
+    margin-right: 20px;
+
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.full-box {
+
+    flex: 1 1 100%;
+    position: relative;
+
+}
+
+.half-box {
+
+    flex: 1 1 45%;
+    position: relative;
+}
+
+.spacing {
+
+    margin-right: 2.5%;
+}
+
+label {
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+input{
+    border-bottom: 2px solid rgb(8, 7, 10);
+    padding: 10px;
+    font-size: .9rem;
+    margin-bottom: 40px;
+}
+
+input:focus {
+
+    border-color: blue;
+
+}
+
+input[type="submit"] {
+
+    background-color:rgb(55, 55, 58);
+    color:#fff;
+    border:none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#agreement {
+
+    margin-right: 5px;
+}
+
+#agreement, #agreement-label {
+
+    display: inline-block;
+    width: auto;
+}
+
+/*validações*/
+
+.error-validation {
+
+    color: red;
+    position: absolute;
+    top: 57px;
+    font-size: .8rem;
+}
+
+.template {
+
+    display: none;
+    
+}
